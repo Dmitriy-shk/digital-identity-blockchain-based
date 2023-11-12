@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Identity Page</title>
+    <link rel="icon" type="x-icon" href="/src/img/icons8-ethereum-32.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <h1>DIGITAL IDENTITY BLOCKCHAIN BASED</h1>
+
+    <section class="form-section">
+        <h2>Create Your Identity</h2>
+    <form id="create-identity-form">
+        <input type="text" id="name-input" placeholder="Your Name" required>
+        <input type="text" id="dob-input" placeholder="Date of Birth" required>
+        <input type="text" id="nationality-input" placeholder="Nationality" required>
+        <button type="submit">Create Identity</button>
+    </form>
+    </section>
+
+    <section class="form-section">
+        <h2>Verify Identity</h2>
+        <form id="verify-identity-form">
+            <input type="text" id="user-address-input" placeholder="User's Address" required>
+            <button type="submit">Verify Identity</button>
+        </form>
+    </section>
+
+    <section class="form-section">
+        <h2>Get Identity Information</h2>
+        <form id="get-identity-form">
+            <input type="text" id="identity-address-input" placeholder="User's Address" required>
+            <button type="submit">Get Identity</button>
+        </form>
+    </section>
+
+    <section class="result-section" id="result">
+        <h2>User data</h2>
+        <p id="user-name-result"></p>
+        <p id="user-data-result"></p>
+    </section>
+
+    <div id="status-message"></div>
+    <div class="image-bottom">
+        <img src="/src/img/IMAGE.png" alt="" class="bg-img">
+    </div>
+</div>
+
+<script src="/src/script.js" ></script>
+<script src="/src/web3.min.js"></script>
+</body>
+</html>
